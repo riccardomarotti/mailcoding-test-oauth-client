@@ -5,4 +5,9 @@ class ApplicationController < ActionController::Base
     auth = request.env['omniauth.auth']
     render json: auth.to_json
   end
+
+  def auth_failure
+    puts "Authentication failed"
+    render text: "Oauth authentication failed", layout: false
+  end
 end
