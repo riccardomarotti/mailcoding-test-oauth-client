@@ -6,7 +6,7 @@ module OmniAuth
       option :name, 'mailcoding'
 
       option :client_options, {
-        site: "http://192.168.1.50:3000",
+        site: "https://staging.mailcoding.eu",
         authorize_path: "/oauth/authorize"
       }
 
